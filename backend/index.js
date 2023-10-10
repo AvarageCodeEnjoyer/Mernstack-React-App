@@ -8,7 +8,7 @@ const studentRoute = require('./routes/student.routes')
 const port = process.env.port || 4000
 
 mongoose
-  .connect("mongodb+srv://ndross427:<password>@cluster0.ipo5a6z.mongodb.net/?retryWrites=true&w=majority")
+  .connect("mongodb+srv://ndross427:9205DRIVE777@cluster0.ipo5a6z.mongodb.net/?retryWrites=true&w=majority")
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
