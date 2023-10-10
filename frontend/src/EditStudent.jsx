@@ -4,7 +4,7 @@ import { useEffect, useEffect } from "react";
 import axios from "axios";
 
 function EditStudent() {
-  const [useerForm, setUserForm] = useState({
+  const [userForm, setUserForm] = useState({
     name: "",
     email: "",
     rollno: "",
