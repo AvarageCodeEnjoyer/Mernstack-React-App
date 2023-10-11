@@ -1,5 +1,5 @@
-import React, { useState, userEffect} from "react";
-import {link} from "react-router-dom";
+import React, { useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 function StudentList() {
@@ -48,12 +48,12 @@ function StudentList() {
                                 <td>{user.email}</td>
                                 <td>@{user.rollno}</td>
                                 <td>
-                                    <link
+                                    <Link
                                     className="btn btn-primary btn-sm me-2"
                                     to={"/edit-student/" + user._id}
                                     >
                                         Edit
-                                    </link>
+                                    </Link>
                                     <button className="btn btn-danger btn-sm"
                                     onClick={() => deleteStudent(user._id)}
                                     >

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useEffect, useEffect } from "react";
+import { useParams, useNavigate } from "react";
 
 import axios from "axios";
 

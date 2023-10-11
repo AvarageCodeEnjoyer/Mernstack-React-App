@@ -4,6 +4,7 @@ import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
 import CreateStudent from "./components/CreateStudent";
 import StudentList from "./components/StudentList";
+import EditStudent from "./components/EditStudent";
 
 function App() {
     return (
