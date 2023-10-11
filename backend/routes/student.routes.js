@@ -54,9 +54,11 @@ router.route("/get-student/:id").get(async (req, res, next) => {
 
 router.route("/update-student/:id").put(async (req, res, next) => {
   await studentSchema
-    .findByIdAndUpdate(req.params.id)
-    .then(() => {
+    .findByIdAndUpdate(req.params.id, req.body)
+    .then(result => {
+      console.log(result)
       res.json({
+        data: result, 
         message: "Data successfully updated",
       })
     })
@@ -70,7 +72,7 @@ router.route("/delete-student/:id").delete(async (req, res, next) => {
     .findByIdAndRemove(req.params.id)
     .then(() => {
       res.json({
-        message: "Data successfully updated",
+        message: "User Successfully Deleted",
       })
     })
     .catch(err => {

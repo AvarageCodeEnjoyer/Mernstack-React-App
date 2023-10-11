@@ -9,7 +9,7 @@ function StudentList() {
         axios
         .delete("http://localhost:4000/students/delete-student/" + _id)
         .then(() => {
-            console.log("Data successfully delted!");
+            console.log("Data successfully deleted!");
         })
         .catch((error) => {
             console.log(error);

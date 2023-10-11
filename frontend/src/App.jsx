@@ -3,8 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
 import CreateStudent from "./components/CreateStudent";
-import StudentList from "./components/StudentList";
 import EditStudent from "./components/EditStudent";
+import StudentList from "./components/StudentList";
 
 function App() {
     return (

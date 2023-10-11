@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { useParams, useNavigate } from "react";
+import { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 
 import axios from "axios";
 
@@ -36,7 +36,7 @@ function EditStudent() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/students/update-student/" + params.id)
+      .get("http://localhost:4000/students/get-student/" + params.id)
       .then((res) => {
         setUserForm({
           name: res.data.data.name,
