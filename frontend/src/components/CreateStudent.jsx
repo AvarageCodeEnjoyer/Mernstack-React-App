@@ -37,7 +37,7 @@ function CreateStudent() {
                 <form onSubmit={onSubmit}>
                     <div className="mb-3">
                         <label className="form-label">Name</label>
-                        <input type="text" className="form-control" name="name" id="name" value={userForm.email} onChange={inputsHandler}/>
+                        <input type="text" className="form-control" name="name" id="name" value={userForm.name} onChange={inputsHandler}/>
                     </div>
                     <div className="mb-3">
                         <label className="form-label">Email</label>
